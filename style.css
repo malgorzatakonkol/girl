@@ -60,7 +60,8 @@
     border-radius: 0 0 155px 100px;
     transform: rotate(30deg);
 }
-.fringe_right{
+
+.fringe_right {
     position: relative;
     top: -141%;
     left: 24%;
@@ -97,20 +98,18 @@
     transform: rotate(-31deg);
 }
 
-
 .eye_left {
     width: 4em;
     height: 4em;
     border-top: solid 2px #000;
     border-left: solid 5px #000;
     background-color: white;
-    border-radius:  75% 15%;
+    border-radius: 75% 15%;
     position: relative;
     transform: rotate(57deg);
     margin-top: -452px;
     margin-left: 60px;
 }
-
 
 .eye_left:before {
     content: '';
@@ -154,7 +153,7 @@
     border-right: solid 2px #000;
     border-bottom: solid 5px #000;
     background-color: white;
-    border-radius:  75% 15%;
+    border-radius: 75% 15%;
     position: relative;
     transform: rotate(214deg);
     margin-top: -35px;
@@ -196,6 +195,7 @@
     position: relative;
     background-color: white;
 }
+
 .nose {
     position: relative;
     width: 0;
@@ -221,6 +221,7 @@
     opacity: 0.4;
     transform: rotate(18deg);
 }
+
 .blush_right {
     position: relative;
     top: -23%;
@@ -253,7 +254,7 @@
     position: relative;
     padding: 0;
     margin-left: 132px;
-    margin-top: -8px;
+    margin-top: -7px;
     height: 1em;
     width: 3.5em;
     border-radius: 50%;
@@ -271,7 +272,7 @@
     border-radius: 30px;
     height: 4em;
     width: 4em;
-    margin: -54px auto 0;
+    margin: -55px auto 0;
     z-index: 2;
 }
 
@@ -294,11 +295,12 @@
     left: 13%;
     width: 15em;
     height: 13em;
-    background:  	#D6E0E1;
+    background: #D6E0E1;
     border-radius: 100px;
     -webkit-border-radius: 110px;
     -moz-border-radius: 100px;
 }
+
 .body:after {
     content: '';
     display: block;
@@ -307,7 +309,7 @@
     left: 112px;
     width: 8em;
     height: 9em;
-    background:  	#D6E0E1;
+    background: #D6E0E1;
     border-radius: 100px;
     -webkit-border-radius: 46px;
     -moz-border-radius: 100px;
@@ -322,7 +324,7 @@
     left: 1px;
     width: 8em;
     height: 10em;
-    background:  	#D6E0E1;
+    background: #D6E0E1;
     border-radius: 100px;
     -webkit-border-radius: 46px;
     -moz-border-radius: 100px;
@@ -335,7 +337,8 @@
     margin-left: 39%;
     width: 10em;
     height: 9em;
- }
+}
+
 .body_correct1 {
     content: '';
     display: block;
@@ -345,6 +348,7 @@
     width: 10em;
     height: 9em;
 }
+
 .body_correct, .body_correct1 {
     background: #D6E0E1;
     border-radius: 100px;
@@ -354,12 +358,14 @@
     transform: rotate(-57deg);
 }
 
+/*Responsive*/
 
 @media screen and (max-width: 650px) {
-      .container {
+    .container {
         width: 20em;
-          height: 20em;
+        height: 20em;
     }
+
     .head {
         width: 10em;
         height: 10em;
@@ -372,13 +378,15 @@
         height: 2em;
         border-radius: 49%;
     }
+
     .eye_left {
         width: 2em;
         height: 2em;
         position: relative;
-        margin-top: -228px;
+        margin-top: -225px;
         margin-left: 33px;
     }
+
     .eye_left:before {
         position: relative;
         width: 20px;
@@ -386,6 +394,7 @@
         left: 2px;
         top: 4px;
     }
+
     .eye_left:after {
         position: relative;
         width: 10px;
@@ -393,6 +402,7 @@
         left: 6px;
         top: -13px;
     }
+
     .reflection_left {
         position: relative;
         width: 0.4em;
@@ -457,6 +467,7 @@
         width: 1.1em;
 
     }
+
     .mouth_bot {
         border-bottom: 3px solid #E5575F;
         height: 1em;
@@ -471,6 +482,7 @@
         width: 2.5em;
         height: 1.5em;
     }
+
     .blush_right {
         position: relative;
         top: -26%;
@@ -487,6 +499,7 @@
         width: 12.5em;
         height: 15em;
     }
+
     .fringe {
         position: relative;
         top: -98%;
@@ -495,7 +508,8 @@
         height: 3.5em;
 
     }
-    .fringe_right{
+
+    .fringe_right {
         position: relative;
         top: -140%;
         left: 24%;
@@ -508,7 +522,7 @@
         top: 310%;
         left: 101%;
         width: 5em;
-        height:3.5em
+        height: 3.5em
     }
 
     .fringe:after {
@@ -518,6 +532,7 @@
         width: 5em;
         height: 3.5em;
     }
+
     .neck {
         top: -2%;
         position: relative;
@@ -527,13 +542,14 @@
 
     .body {
         position: relative;
-        top: -8%;
+        top: -9.5%;
         left: 12%;
         width: 7.5em;
         height: 6.5em;
         -webkit-border-radius: 46px;
 
     }
+
     .body:after {
         content: '';
         display: block;
@@ -553,10 +569,12 @@
         width: 7.5em;
         height: 4em;
     }
-    .body_correct{
+
+    .body_correct {
         display: none;
     }
-    .body_correct1{
+
+    .body_correct1 {
         display: none;
     }
 
