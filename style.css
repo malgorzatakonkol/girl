@@ -180,7 +180,6 @@
 }
 
 .blush_left {
-    /*z-index: 999;*/
     position: relative;
     top: -10%;
     left: 11%;
@@ -261,7 +260,6 @@
 }
 
 .body {
-    /*z-index: 10;*/
     position: relative;
     top: -15%;
     left: 13%;
@@ -282,88 +280,157 @@
         width: 10em;
         height: 10em;
         border-radius: 40%;
-        background-color: pink;
     }
 
     .chin {
         width: 2.5em;
         height: 2em;
         border-radius: 49%;
-        background-color: pink;
-        /*margin-top: 83%;*/
-        /*margin-left: 37%;*/
-        /*position: relative;*/
     }
     .eye_left {
-        /*margin: 100px;*/
         width: 2em;
         height: 2em;
-        border-radius:  75% 15%;
         position: relative;
-        transform: rotate(57deg);
-        margin-top: -111px;
+        margin-top: -228px;
         margin-left: 33px;
     }
     .eye_left:before {
-        content: '';
-        display: block;
         position: relative;
         width: 20px;
         height: 20px;
-        border: solid 1px #000;
-        border-radius: 50%;
+        left: 2px;
+        top: 4px;
+    }
+    .eye_left:after {
+        position: relative;
+        width: 12px;
+        height: 12px;
         left: 5px;
-        top: 5px;
+        top: -14px;
+    }
+    .reflection_left {
+        position: relative;
+        width: 0.5em;
+        height: 0.5em;
+        margin-top: -14%;
+        margin-left: 24%;
     }
 
     .eye_right {
-        /*margin: 100px;*/
         width: 2em;
         height: 2em;
-        border: solid 1px #000;
-        border-radius:  75% 15%;
         position: relative;
-        transform: rotate(214deg);
-        margin-top: -33px;
+        margin-top: -19px;
         margin-left: 100px;
     }
 
     .eye_right:before {
-        content: '';
-        display: block;
         position: relative;
         width: 20px;
         height: 20px;
-        border: solid 1px #000;
-        border-radius: 50%;
         left: 4px;
         top: 4px;
     }
-    .mouth_top {
-        /*position: relative;*/
-        /*border-top: none;*/
-        /*border-right: none;*/
-        /*border-left: none;*/
-        border-bottom: 3px solid #000;
-        -webkit-border-radius: 100px;
-        border-radius: 14px;
-        height: 2em;
-        width: 2em;
-        margin: 28px auto 0;
+
+    .eye_right:after {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        left: 8px;
+        top: -14px;
     }
 
+    .reflection_right {
+        width: 0.5em;
+        height: 0.5em;
+        margin-top: -14%;
+        margin-left: 73%;
+        position: relative;
+    }
+
+    .nose {
+        position: relative;
+        border-left: 5px solid transparent;
+        border-right: 9px solid transparent;
+        border-bottom: 18px solid #DDA782;
+        margin-left: 74px;
+        margin-top: 20px;
+    }
+
+    .mouth_top {
+        border-bottom: 6px solid #E5575F;
+        height: 2em;
+        width: 2em;
+        margin: -44px auto 0;
+    }
+
+    .teeth {
+        position: relative;
+        margin-left: 70px;
+        margin-top: -8px;
+        height: 0.3em;
+        width: 1.1em;
+
+    }
     .mouth_bot {
-        /*position: relative;*/
-        /*border-top: none;*/
-        /*border-right: none;*/
-        /*border-left: none;*/
-        border-bottom: 3px solid #000;
-        -webkit-border-radius: 100px;
-        border-radius: 30px;
+        border-bottom: 3px solid #E5575F;
         height: 1em;
         width: 2em;
         margin: -21px auto 0;
-        z-index: 1;
     }
+
+    .blush_left {
+        position: relative;
+        top: -10%;
+        left: 11%;
+        width: 2.5em;
+        height: 1.5em;
+    }
+    .blush_right {
+        position: relative;
+        top: -26%;
+        left: 67%;
+        width: 2.5em;
+        height: 1.5em;
+    }
+
+    .hair {
+        z-index: -3;
+        position: absolute;
+        top: -13%;
+        left: -15%;
+        width: 13em;
+        height: 15em;
+    }
+    .fringe {
+        position: relative;
+        top: -98%;
+        left: 6%;
+        width: 4.1em;
+        height: 3.5em;
+
+    }
+    .fringe_right{
+        position: relative;
+        top: -140%;
+        left: 24%;
+        width: 6.5em;
+        height: 4em;
+    }
+    .neck {
+        position: relative;
+        width: 1.5em;
+        height: 3em;
+    }
+
+    .body {
+        position: relative;
+        top: -10%;
+        left: 12%;
+        width: 7.5em;
+        height: 10em;
+
+    }
+
 
 }
