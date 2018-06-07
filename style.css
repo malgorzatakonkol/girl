@@ -8,13 +8,13 @@
     width: 40em;
     height: 40em;
     border-radius: 50%;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     background-color: yellow;
     position: absolute;
     display: block;
     z-index: -4;
-    margin-left: 20%;
     border: 5px solid red;
+    padding: 19px 0
 
 }
 
@@ -49,30 +49,8 @@
     border-radius: 181px 181px 0 0;
     background: #424B54;
 }
-/*.hair1{*/
-    /*z-index: -3;*/
-    /*position: relative;*/
-    /*top: -122%;*/
-    /*left: -11%;*/
-    /*width: 26em;*/
-    /*height: 30em;*/
-    /*border-radius: 599px 500px 0 0;*/
-    /*background: #424B54;*/
-/*}*/
-
-/*.hair2{*/
-    /*z-index: -3;*/
-    /*position: relative;*/
-    /*top: -122%;*/
-    /*left: -11%;*/
-    /*width: 26em;*/
-    /*height: 30em;*/
-    /*border-radius: 599px 500px 0 0;*/
-    /*background: #424B54;*/
-/*}*/
 
 .fringe {
-    /*z-index: 99;*/
     position: relative;
     top: -98%;
     left: 2%;
@@ -98,7 +76,7 @@
     display: block;
     position: relative;
     top: 296%;
-    left: 86%;
+    left: 87%;
     width: 10em;
     height: 7em;
     background: #424B54;
@@ -121,7 +99,6 @@
 
 
 .eye_left {
-    /*margin: 100px;*/
     width: 4em;
     height: 4em;
     border-top: solid 2px #000;
@@ -172,7 +149,6 @@
 }
 
 .eye_right {
-    /*margin: 100px;*/
     width: 4em;
     height: 4em;
     border-right: solid 2px #000;
@@ -379,11 +355,10 @@
 }
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 650px) {
       .container {
         width: 20em;
           height: 20em;
-          margin-left: 5%;
     }
     .head {
         width: 10em;
@@ -413,17 +388,17 @@
     }
     .eye_left:after {
         position: relative;
-        width: 12px;
-        height: 12px;
-        left: 5px;
-        top: -14px;
+        width: 10px;
+        height: 10px;
+        left: 6px;
+        top: -13px;
     }
     .reflection_left {
         position: relative;
-        width: 0.5em;
-        height: 0.5em;
+        width: 0.4em;
+        height: 0.4em;
         margin-top: -14%;
-        margin-left: 24%;
+        margin-left: 25%;
     }
 
     .eye_right {
@@ -444,17 +419,17 @@
 
     .eye_right:after {
         position: relative;
-        width: 12px;
-        height: 12px;
-        left: 8px;
-        top: -14px;
+        width: 10px;
+        height: 10px;
+        left: 9px;
+        top: -13px;
     }
 
     .reflection_right {
-        width: 0.5em;
-        height: 0.5em;
+        width: 0.4em;
+        height: 0.4em;
         margin-top: -14%;
-        margin-left: 73%;
+        margin-left: 74%;
         position: relative;
     }
 
@@ -531,7 +506,7 @@
     .fringe:before {
         position: relative;
         top: 310%;
-        left: 98%;
+        left: 101%;
         width: 5em;
         height:3.5em
     }
@@ -539,11 +514,12 @@
     .fringe:after {
         position: relative;
         top: 100%;
-        left: 257%;
+        left: 260%;
         width: 5em;
         height: 3.5em;
     }
     .neck {
+        top: -2%;
         position: relative;
         width: 1.5em;
         height: 3em;
@@ -551,7 +527,7 @@
 
     .body {
         position: relative;
-        top: -10%;
+        top: -8%;
         left: 12%;
         width: 7.5em;
         height: 6.5em;
