@@ -9,7 +9,7 @@
     height: 40em;
     border-radius: 50%;
     margin: 0 auto;
-    background-color: yellow;
+    /*background-color: yellow;*/
     position: absolute;
     display: block;
     z-index: -4;
