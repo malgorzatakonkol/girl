@@ -18,6 +18,7 @@
 
 }
 
+
 .head {
     position: absolute;
     width: 20em;
@@ -98,6 +99,7 @@
     transform: rotate(-31deg);
 }
 
+
 .eye_left {
     width: 4em;
     height: 4em;
@@ -109,6 +111,8 @@
     transform: rotate(57deg);
     margin-top: -452px;
     margin-left: 60px;
+    animation: blink forwards infinite 10s ease-in-out;
+
 }
 
 .eye_left:before {
@@ -145,7 +149,73 @@
     background-color: white;
     margin-top: -14%;
     margin-left: 24%;
+    animation: blink forwards infinite 10s ease-out;
 }
+
+@keyframes blink {
+    0%, 2%, 60%, 62%, 100% { transform: rotate(57deg); }
+    1%, 61% { transform: scaleX(0.1) scaleY(-0.3); }
+}
+
+.lashes_left {
+    position: absolute;
+    margin-top: -19%;
+    margin-left: 13%;
+    width: 1.5em;
+    height: 1.5em;
+    border-bottom: 4px solid #110d0e;
+    left: -.5em;
+    -moz-border-radius: 40% 80%;
+    -webkit-border-radius: 40%;
+    border-radius: 100% 80%;
+    transform: rotate(-310deg);
+    /*animation: blink2 forwards infinite 10s ease-in-out;*/
+}
+.lashes_left:after {
+    content: '';
+    display: block;
+    position: relative;
+    margin-top: -94%;
+    margin-left: 39%;
+    width: 1.5em;
+    height: 1.5em;
+    border-bottom: 4px solid #110d0e;
+    left: -.5em;
+    -moz-border-radius: 40% 80%;
+    -webkit-border-radius: 40%;
+    border-radius: 100% 80%;
+    transform: rotate(-361deg);
+    /*animation: blink2 forwards infinite 10s ease-in-out;*/
+}
+
+.lashes_left:before {
+    content: '';
+    display: block;
+    position: relative;
+    margin-top: -64%;
+    margin-left: 43%;
+    width: 1.5em;
+    height: 1.5em;
+    border-bottom: 4px solid #110d0e;
+    left: -.5em;
+    -moz-border-radius: 40% 80%;
+    -webkit-border-radius: 40%;
+    border-radius: 100% 80%;
+    transform: rotate(-356deg);
+    /*animation: blink2  infinite 10s;*/
+}
+
+/*@keyframes blink2 {*/
+    /*0%, 2%, 60%, 62%, 100% {*/
+        /*width: 1em;*/
+        /*height: 1.5em;*/
+        /*margin-top: -19%;*/
+        /*margin-left: 14.5%;}*/
+    /*1%, 61% {   width: 0;*/
+        /*height: 0; }*/
+/*}*/
+
+
 
 .eye_right {
     width: 4em;
@@ -158,7 +228,10 @@
     transform: rotate(214deg);
     margin-top: -35px;
     margin-left: 195px;
+    animation: blink1  infinite 10s;
 }
+
+
 
 .eye_right:before {
     content: '';
@@ -186,6 +259,77 @@
     top: -34px;
 }
 
+.lashes_right{
+    position: absolute;
+    margin-top: -19%;
+    margin-left: 84%;
+    width: 1.5em;
+    height: 1.5em;
+    border-bottom: 4px solid #110d0e;
+    left: -.5em;
+    -moz-border-radius: 40% 80%;
+    -webkit-border-radius: 40%;
+    border-radius: 128% 80%;
+    transform: rotate(-379deg);
+    animation: blink3 forwards infinite 10s ease-in-out;
+}
+
+@keyframes blink3 {
+    0%, 2%, 60%, 62%, 100% {
+        width: 1.5em;
+        height: 1.5em;
+        margin-top: -19%;
+        margin-left: 84%;}
+    1%, 61% {   width: 0;
+        height: 0; }
+}
+
+.lashes_right:before {
+    content: '';
+    display: block;
+    position: relative;
+    border-bottom: 4px solid #110d0e;
+    left: -.5em;
+    -moz-border-radius: 40% 80%;
+    -webkit-border-radius: 40%;
+    border-radius: 100% 80%;
+    transform: rotate(-379deg);
+    animation: blink4  infinite 10s;
+}
+
+@keyframes blink4 {
+    0%, 2%, 60%, 62%, 100% {
+        margin-top: -34%;
+        margin-left: 20%;
+        width: 1.5em;
+        height: 1.5em;}
+    1%, 61% {   width: 0;
+        height: 0; }
+}
+.lashes_right:after {
+    content: '';
+    display: block;
+    position: relative;
+    border-bottom: 4px solid #110d0e;
+    left: -.5em;
+    -moz-border-radius: 40% 80%;
+    -webkit-border-radius: 40%;
+    border-radius: 100% 80%;
+    transform: rotate(-379deg);
+    animation: blink5  infinite 10s;
+}
+@keyframes blink5 {
+    0%, 2%, 60%, 62%, 100% {
+        margin-top: -133%;
+        margin-left: 10%;
+        width: 1.5em;
+        height: 1.5em;}
+    1%, 61% {   width: 0;
+        height: 0; }
+}
+
+
+
 .reflection_right {
     width: 1em;
     height: 1em;
@@ -194,6 +338,12 @@
     margin-left: 71.5%;
     position: relative;
     background-color: white;
+    animation: blink1 forwards infinite 10s ease-in-out;
+}
+
+@keyframes blink1 {
+    0%, 2%, 60%, 62%, 100% { transform: rotate(214deg); }
+    1%, 61% { transform: scaleX(0.1) scaleY(-0.3); }
 }
 
 .nose {
@@ -220,6 +370,7 @@
     -moz-border-radius: 100%;
     opacity: 0.4;
     transform: rotate(18deg);
+    animation: ashamed forwards infinite 2s ease-in-out;
 }
 
 .blush_right {
@@ -234,7 +385,18 @@
     -moz-border-radius: 100%;
     opacity: 0.4;
     transform: rotate(-14deg);
+    animation: ashamed forwards infinite 2s ease-in-out;
 }
+
+@keyframes ashamed {
+    0%, 2%, 60%, 62%, 100% {   opacity: 0.4; }
+    20% { opacity: 0.6;}
+    40% { opacity: 0.8;}
+    60% { opacity: 0.7;}
+    80% { opacity: 0.5;}
+    100% { opacity: 0.2;}
+}
+
 
 .mouth_top {
     position: relative;
@@ -260,7 +422,9 @@
     border-radius: 50%;
     -webkit-border-radius: 100px;
     background-color: white;
+
 }
+
 
 .mouth_bot {
     position: relative;
@@ -276,6 +440,7 @@
     z-index: 2;
 }
 
+
 .neck {
     z-index: -2;
     position: relative;
@@ -289,6 +454,7 @@
     -moz-border-radius: 100%;
 }
 
+
 .body {
     position: relative;
     top: -18%;
@@ -300,6 +466,7 @@
     -webkit-border-radius: 110px;
     -moz-border-radius: 100px;
 }
+
 
 .body:after {
     content: '';
