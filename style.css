@@ -15,9 +15,7 @@
     z-index: -4;
     border: 5px solid red;
     padding: 19px 0
-
 }
-
 
 .head {
     position: absolute;
@@ -159,24 +157,30 @@
 
 .lashes_left {
     position: absolute;
-    margin-top: -19%;
+    margin-top: -18%;
     margin-left: 13%;
     width: 1.5em;
-    height: 1.5em;
+    height: 1.4em;
     border-bottom: 4px solid #110d0e;
     left: -.5em;
     -moz-border-radius: 40% 80%;
     -webkit-border-radius: 40%;
     border-radius: 100% 80%;
-    transform: rotate(-310deg);
-    /*animation: blink2 forwards infinite 10s ease-in-out;*/
+    transform: rotate(-366deg);
+    animation: leftBlink forwards infinite 10s ease-in-out;
 }
+
+@keyframes leftBlink {
+    0%, 2%, 60%, 62%, 100% { transform: rotate(57deg); }
+    1%, 61% { transform: scaleX(0.1) scaleY(-0.3); }
+}
+
 .lashes_left:after {
     content: '';
     display: block;
     position: relative;
-    margin-top: -94%;
-    margin-left: 39%;
+    margin-top: -96%;
+    margin-left: 28%;
     width: 1.5em;
     height: 1.5em;
     border-bottom: 4px solid #110d0e;
@@ -184,16 +188,15 @@
     -moz-border-radius: 40% 80%;
     -webkit-border-radius: 40%;
     border-radius: 100% 80%;
-    transform: rotate(-361deg);
-    /*animation: blink2 forwards infinite 10s ease-in-out;*/
+    transform: rotate(-366deg);
 }
 
 .lashes_left:before {
     content: '';
     display: block;
     position: relative;
-    margin-top: -64%;
-    margin-left: 43%;
+    margin-top: -63%;
+    margin-left: 22%;
     width: 1.5em;
     height: 1.5em;
     border-bottom: 4px solid #110d0e;
@@ -201,21 +204,8 @@
     -moz-border-radius: 40% 80%;
     -webkit-border-radius: 40%;
     border-radius: 100% 80%;
-    transform: rotate(-356deg);
-    /*animation: blink2  infinite 10s;*/
+    transform: rotate(-366deg);
 }
-
-/*@keyframes blink2 {*/
-    /*0%, 2%, 60%, 62%, 100% {*/
-        /*width: 1em;*/
-        /*height: 1.5em;*/
-        /*margin-top: -19%;*/
-        /*margin-left: 14.5%;}*/
-    /*1%, 61% {   width: 0;*/
-        /*height: 0; }*/
-/*}*/
-
-
 
 .eye_right {
     width: 4em;
@@ -230,8 +220,6 @@
     margin-left: 195px;
     animation: blink1  infinite 10s;
 }
-
-
 
 .eye_right:before {
     content: '';
@@ -737,12 +725,9 @@
         height: 4em;
     }
 
-    .body_correct {
+    .body_correct, .body_correct1, .lashes_left, .lashes_right {
         display: none;
     }
 
-    .body_correct1 {
-        display: none;
-    }
 
 }
